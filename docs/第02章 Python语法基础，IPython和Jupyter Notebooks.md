@@ -10,7 +10,7 @@
 
 最好在IPython和Jupyter中亲自尝试本书中使用的工具。当你学会了如何启动Ipython和Jupyter，我建议你跟随示例代码进行练习。与任何键盘驱动的操作环境一样，记住常见的命令也是学习曲线的一部分。
 
-> 笔记：本章没有介绍Python的某些概念，如类和面向对象编程，你可能会发现它们在Python数据分析中很有用。 为了加强Python知识，我建议你学习官方Python教程，[https://docs.python.org/3/，或是通用的Python教程书籍，比如：](https://docs.python.org/3/，或是通用的Python教程书籍，比如：)
+> 笔记：本章没有介绍Python的某些概念，如类和面向对象编程，你可能会发现它们在Python数据分析中很有用。 为了加强Python知识，我建议你学习官方[Python教程](https://docs.python.org/3/) 或是通用的Python教程书籍，比如：
 >
 > * Python Cookbook，第3版，David Beazley和Brian K. Jones著（O’Reilly）
 > * 流畅的Python，Luciano Ramalho著 \(O’Reilly\)
@@ -143,17 +143,17 @@ Created new window in existing browser session.
 
 > 笔记：许多人使用Jupyter作为本地的计算环境，但它也可以部署到服务器上远程访问。这里不做介绍，如果需要的话，鼓励读者自行到网上学习。
 
-![&#x56FE;2-1 Jupyter notebook&#x542F;&#x52A8;&#x9875;&#x9762;](http://upload-images.jianshu.io/upload_images/7178691-c76c4f40777d3ef1.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-1 Jupyter notebook&#x542F;&#x52A8;&#x9875;&#x9762;](../images/7178691-c76c4f40777d3ef1.png)
 
 要新建一个notebook，点击按钮New，选择“Python3”或“conda\[默认项\]”。如果是第一次，点击空格，输入一行Python代码。然后按Shift-Enter执行。
 
-![&#x56FE;2-2 Jupyter&#x65B0;notebook&#x9875;&#x9762;](http://upload-images.jianshu.io/upload_images/7178691-86a6813291ead445.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-2 Jupyter&#x65B0;notebook&#x9875;&#x9762;](../images/7178691-86a6813291ead445.png)
 
 当保存notebook时（File目录下的Save and Checkpoint），会创建一个后缀名为`.ipynb`的文件。这是一个自包含文件格式，包含当前笔记本中的所有内容（包括所有已评估的代码输出）。可以被其它Jupyter用户加载和编辑。要加载存在的notebook，把它放到启动notebook进程的相同目录内。你可以用本书的示例代码练习，见图2-3。
 
 虽然Jupyter notebook和IPython shell使用起来不同，本章中几乎所有的命令和工具都可以通用。
 
-![&#x56FE;2-3 Jupyter&#x67E5;&#x770B;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;notebook&#x7684;&#x9875;&#x9762;](http://upload-images.jianshu.io/upload_images/7178691-bc9a0b4c30363747.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-3 Jupyter&#x67E5;&#x770B;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;notebook&#x7684;&#x9875;&#x9762;](../images/7178691-bc9a0b4c30363747.png)
 
 ### Tab补全
 
@@ -210,7 +210,7 @@ datasets/movielens/ratings.dat   datasets/movielens/users.dat
 
 另外，tab补全可以补全函数的关键词参数（包括等于号=）。见图2-4。
 
-![&#x56FE;2-4 Jupyter notebook&#x4E2D;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x51FD;&#x6570;&#x5173;&#x952E;&#x8BCD;](http://upload-images.jianshu.io/upload_images/7178691-8188b0386238c16a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-4 Jupyter notebook&#x4E2D;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x51FD;&#x6570;&#x5173;&#x952E;&#x8BCD;](../images/7178691-8188b0386238c16a.png)
 
 后面会仔细地学习函数。
 
@@ -402,9 +402,9 @@ Pasting code; enter '--' alone on the line to stop or use Ctrl-D.
 
 IPython有许多键盘快捷键进行导航提示（类似Emacs文本编辑器或UNIX bash Shell）和交互shell的历史命令。表2-1总结了常见的快捷键。图2-5展示了一部分，如移动光标。
 
-![&#x56FE;2-5 IPython shell&#x4E2D;&#x4E00;&#x4E9B;&#x5FEB;&#x6377;&#x952E;&#x7684;&#x8BF4;&#x660E;](http://upload-images.jianshu.io/upload_images/7178691-9ed3866ea25c11f8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-5 IPython shell&#x4E2D;&#x4E00;&#x4E9B;&#x5FEB;&#x6377;&#x952E;&#x7684;&#x8BF4;&#x660E;](../images/7178691-9ed3866ea25c11f8.png)
 
-![&#x8868;2-1 IPython&#x7684;&#x6807;&#x51C6;&#x5FEB;&#x6377;&#x952E;](http://upload-images.jianshu.io/upload_images/7178691-e179f5ea00e50691.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x8868;2-1 IPython&#x7684;&#x6807;&#x51C6;&#x5FEB;&#x6377;&#x952E;](../images/7178691-e179f5ea00e50691.png)
 
 Jupyter notebooks有另外一套庞大的快捷键。因为它的快捷键比IPython的变化快，建议你参阅Jupyter notebook的帮助文档。
 
@@ -472,7 +472,7 @@ Out[24]: '/home/wesm/code/pydata-book'
 
 IPython的文档可以在shell中打开，我建议你用`%quickref`或`%magic`学习下所有特殊命令。表2-2列出了一些可以提高生产率的交互计算和Python开发的IPython指令。
 
-![&#x8868;2-2 &#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;IPython&#x9B54;&#x672F;&#x547D;&#x4EE4;](http://upload-images.jianshu.io/upload_images/7178691-c72b11add9b8ccf8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x8868;2-2 &#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;IPython&#x9B54;&#x672F;&#x547D;&#x4EE4;](../images/7178691-c72b11add9b8ccf8.png)
 
 ### 集成Matplotlib
 
@@ -491,7 +491,7 @@ Using matplotlib backend: Qt4Agg
 In [26]: %matplotlib inline
 ```
 
-![&#x56FE;2-6 Jupyter&#x884C;&#x5185;matplotlib&#x4F5C;&#x56FE;](http://upload-images.jianshu.io/upload_images/7178691-3ab3738a92a15486.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-6 Jupyter&#x884C;&#x5185;matplotlib&#x4F5C;&#x56FE;](../images/7178691-3ab3738a92a15486.png)
 
 ## 2.3 Python语法基础
 
@@ -594,7 +594,7 @@ In [11]: b
 Out[11]: [1, 2, 3, 4]
 ```
 
-![&#x56FE;2-7 &#x5BF9;&#x540C;&#x4E00;&#x5BF9;&#x8C61;&#x7684;&#x53CC;&#x91CD;&#x5F15;&#x7528;](http://upload-images.jianshu.io/upload_images/7178691-3e3a8c6b9c5040fc.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x56FE;2-7 &#x5BF9;&#x540C;&#x4E00;&#x5BF9;&#x8C61;&#x7684;&#x53CC;&#x91CD;&#x5F15;&#x7528;](../images/7178691-3e3a8c6b9c5040fc.png)
 
 理解Python的引用的含义，数据是何时、如何、为何复制的，是非常重要的。尤其是当你用Python处理大的数据集时。
 
@@ -830,7 +830,7 @@ In [42]: a is None
 Out[42]: True
 ```
 
-![&#x8868;2-3 &#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;](http://upload-images.jianshu.io/upload_images/7178691-9fb5f25b33166acf.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x8868;2-3 &#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;](../images/7178691-9fb5f25b33166acf.png)
 
 ### 可变与不可变对象
 
@@ -864,7 +864,7 @@ TypeError: 'tuple' object does not support item assignment
 
 Python的标准库中有一些内建的类型，用于处理数值数据、字符串、布尔值，和日期时间。这些单值类型被称为标量类型，本书中称其为标量。表2-4列出了主要的标量。日期和时间处理会另外讨论，因为它们是标准库的`datetime`模块提供的。
 
-![&#x8868;2-4 Python&#x7684;&#x6807;&#x91CF;](http://upload-images.jianshu.io/upload_images/7178691-27a30ac3e7d262a1.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x8868;2-4 Python&#x7684;&#x6807;&#x91CF;](../images/7178691-27a30ac3e7d262a1.png)
 
 ### 数值类型
 
@@ -1198,7 +1198,7 @@ Out[109]: datetime.datetime(2009, 10, 31, 0, 0)
 
 表2-5列出了所有的格式化命令。
 
-![&#x8868;2-5 Datetime&#x683C;&#x5F0F;&#x5316;&#x6307;&#x4EE4;&#xFF08;&#x4E0E;ISO C89&#x517C;&#x5BB9;&#xFF09;](http://upload-images.jianshu.io/upload_images/7178691-100f9a20c1536553.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+![&#x8868;2-5 Datetime&#x683C;&#x5F0F;&#x5316;&#x6307;&#x4EE4;&#xFF08;&#x4E0E;ISO C89&#x517C;&#x5BB9;&#xFF09;](../images/7178691-100f9a20c1536553.png)
 
 当你聚类或对时间序列进行分组，替换datetimes的time字段有时会很有用。例如，用0替换分和秒：
 

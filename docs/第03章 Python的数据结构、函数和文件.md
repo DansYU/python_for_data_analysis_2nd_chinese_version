@@ -397,7 +397,7 @@ Out[80]: [6, 3, 5, 6]
 
 需要一段时间来熟悉使用切片，尤其是当你之前学的是R或MATLAB。图3-1展示了正整数和负整数的切片。在图中，指数标示在边缘以表明切片是在哪里开始哪里结束的。
 
-![图3-1 Python切片演示](http://upload-images.jianshu.io/upload_images/7178691-522e2b688b755ff3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图3-1 Python切片演示](../images/7178691-522e2b688b755ff3.png)
 
 在第二个冒号后面使用``step``，可以隔一个取一个元素：
 
@@ -745,7 +745,7 @@ Out[140]: {3, 4, 5}
 
 表3-1列出了常用的集合方法。
 
-![表3-1 Python的集合操作](http://upload-images.jianshu.io/upload_images/7178691-980efe5d98ecc4d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表3-1 Python的集合操作](../images/7178691-980efe5d98ecc4d6.png)
 
 所有逻辑集合操作都有另外的原地实现方法，可以直接用结果替代集合的内容。对于大的集合，这么做效率更高：
 
@@ -1258,7 +1258,7 @@ S ['Steven']
 
 表3-2中列出了一些我经常用到的itertools函数。建议参阅Python官方文档，进一步学习。
 
-![表3-2 一些有用的itertools函数](http://upload-images.jianshu.io/upload_images/7178691-111823d8767a104d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表3-2 一些有用的itertools函数](../images/7178691-111823d8767a104d.png)
 
 ## 错误和异常处理
 优雅地处理Python的错误和异常是构建健壮程序的重要部分。在数据分析中，许多函数函数只用于部分输入。例如，Python的float函数可以将字符串转换成浮点数，但输入有误时，有``ValueError``错误：
@@ -1457,7 +1457,7 @@ In [212]: with open(path) as f:
 
 如果输入f =open(path,'w')，就会有一个新文件被创建在examples/segismundo.txt，并覆盖掉该位置原来的任何数据。另外有一个x文件模式，它可以创建可写的文件，但是如果文件路径存在，就无法创建。表3-3列出了所有的读/写模式。
 
-![表3-3 Python的文件模式](http://upload-images.jianshu.io/upload_images/7178691-28274484129f0ea7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表3-3 Python的文件模式](../images/7178691-28274484129f0ea7.png)
 
 对于可读文件，一些常用的方法是read、seek和tell。read会从文件返回字符。字符的内容是由文件的编码决定的（如UTF-8），如果是二进制模式打开的就是原始字节：
 
@@ -1535,7 +1535,7 @@ Out[227]:
 
 表3-4列出了一些最常用的文件方法。
 
-![表3-4 Python重要的文件方法或属性](http://upload-images.jianshu.io/upload_images/7178691-d25bd6e730afeb39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表3-4 Python重要的文件方法或属性](../images/7178691-d25bd6e730afeb39.png)
 
 ## 文件的字节和Unicode
 Python文件的默认操作是“文本模式”，也就是说，你需要处理Python的字符串（即Unicode）。它与“二进制模式”相对，文件模式加一个b。我们来看上一节的文件（UTF-8编码、包含非ASCII字符）：

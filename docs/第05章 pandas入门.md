@@ -475,7 +475,7 @@ Out[71]:
 
 表5-1列出了DataFrame构造函数所能接受的各种数据。
 
-![](http://upload-images.jianshu.io/upload_images/7178691-106835b28c0cea5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/7178691-106835b28c0cea5a.png)
 
 如果设置了DataFrame的index和columns的name属性，则这些信息也会被显示出来：
 ```python
@@ -583,7 +583,7 @@ Out[90]: Index(['foo', 'foo', 'bar', 'bar'], dtype='object')
 
 每个索引都有一些方法和属性，它们可用于设置逻辑并回答有关该索引所包含的数据的常见问题。表5-2列出了这些函数。
 
-![](http://upload-images.jianshu.io/upload_images/7178691-5499d14f0e2cd639.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/7178691-5499d14f0e2cd639.jpg)
 
 # 5.2 基本功能
 本节中，我将介绍操作Series和DataFrame中的数据的基本手段。后续章节将更加深入地挖掘pandas在数据分析和处理方面的功能。本书不是pandas库的详尽文档，主要关注的是最重要的功能，那些不大常用的内容（也就是那些更深奥的内容）就交给你自己去摸索吧。
@@ -676,7 +676,7 @@ d      7   NaN           8
 
 表5-3列出了reindex函数的各参数及说明。
 
-![](http://upload-images.jianshu.io/upload_images/7178691-efa3dbd4b83c61ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/7178691-efa3dbd4b83c61ec.jpg)
 
 ## 丢弃指定轴上的项
 丢弃某条轴上的一个或多个项很简单，只要有一个索引数组或列表即可。由于需要执行一些数据整理和集合逻辑，所以drop方法返回的是一个在指定轴上删除了指定值的新对象：
@@ -965,7 +965,7 @@ New York   12   13     14
 >笔记：在一开始设计pandas时，我觉得用frame[:, col]选取列过于繁琐（也容易出错），因为列的选择是非常常见的操作。我做了些取舍，将花式索引的功能（标签和整数）放到了ix运算符中。在实践中，这会导致许多边缘情况，数据的轴标签是整数，所以pandas团队决定创造loc和iloc运算符分别处理严格基于标签和整数的索引。
 ix运算符仍然可用，但并不推荐。
 
-![表5-4 DataFrame的索引选项](http://upload-images.jianshu.io/upload_images/7178691-64354f2ab777bd8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表5-4 DataFrame的索引选项](../images/7178691-64354f2ab777bd8c.png)
 
 ## 整数索引
 处理整数索引的pandas对象常常难住新手，因为它与Python内置的列表和元组的索引语法不同。例如，你可能不认为下面的代码会出错：
@@ -1182,7 +1182,7 @@ Out[173]:
 2  0.125000  0.111111  0.100000  0.090909
 ```
 
-![表5-5 灵活的算术方法](http://upload-images.jianshu.io/upload_images/7178691-16857a1021f98d1f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表5-5 灵活的算术方法](../images/7178691-16857a1021f98d1f.png)
 
 与此类似，在对Series或DataFrame重新索引时，也可以指定一个填充值：
 ```python
@@ -1550,7 +1550,7 @@ Out[221]:
 3  2.0  3.0  1.0
 ```
 
-![表5-6 排名时用于破坏平级关系的方法](http://upload-images.jianshu.io/upload_images/7178691-7edfab5b4a147581.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表5-6 排名时用于破坏平级关系的方法](../images/7178691-7edfab5b4a147581.png)
 
 ## 带有重复标签的轴索引
 直到目前为止，我所介绍的所有范例都有着唯一的轴标签（索引值）。虽然许多pandas函数（如reindex）都要求标签唯一，但这并不是强制性的。我们来看看下面这个简单的带有重复索引值的Series：
@@ -1655,7 +1655,7 @@ dtype: float64
 
 表5-7列出了这些约简方法的常用选项。
 
-![](http://upload-images.jianshu.io/upload_images/7178691-af35e3809278410e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/7178691-af35e3809278410e.jpg)
 
 有些方法（如idxmin和idxmax）返回的是间接统计（比如达到最小值或最大值的索引）：
 ```python
@@ -1707,7 +1707,7 @@ dtype: object
 
 表5-8列出了所有与描述统计相关的方法。
 
-![](http://upload-images.jianshu.io/upload_images/7178691-11fa967f658ac314.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/7178691-11fa967f658ac314.jpg)
 
 ## 相关系数与协方差
 有些汇总统计（如相关系数和协方差）是通过参数对计算出来的。我们来看几个DataFrame，它们的数据来自Yahoo!Finance的股票价格和成交量，使用的是pandas-datareader包（可以用conda或pip安装）：
@@ -1890,7 +1890,7 @@ Out[262]: array([0, 2, 1, 1, 0, 2])
 
 表5-9给出了这几个方法的一些参考信息。
 
-![表5-9 唯一值、值计数、成员资格方法](http://upload-images.jianshu.io/upload_images/7178691-b53c4a9d65a2db32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![表5-9 唯一值、值计数、成员资格方法](../images/7178691-b53c4a9d65a2db32.png)
 
 有时，你可能希望得到DataFrame中多个相关列的一张柱状图。例如：
 ```python
